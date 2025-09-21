@@ -1,0 +1,70 @@
+/* Use the new single import for Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Your custom global styles and layers go below the import */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300;
+  }
+}
+
+/* --- Animations --- */
+
+/* Fade-in animation (already exists) */
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fade-in-down 0.3s ease-out forwards;
+}
+
+/* Blob animation (already exists) */
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+/* NEW: Slide-in-from-bottom animation */
+@keyframes slide-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* This class now correctly applies the animation without forcing it to run on load. */
+.animate-slide-in-up {
+    animation: slide-in-up 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+
+/* Animation delay utilities (already exist) */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+/* NEW: Shorter animation delay */
+.animation-delay-300 {
+    animation-delay: 0.3s;
+}
