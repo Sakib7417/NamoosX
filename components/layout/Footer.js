@@ -3,6 +3,7 @@
 import React, { useState } from 'react'; // Import useState
 import { ShieldCheck, Award, CheckCircle2 } from 'lucide-react'; // Import CheckCircle2 for success icon
 import './Footer.css'
+import Image from 'next/image';
 /**
  * The main Footer component for the website, featuring a clean, modern white design.
  */
@@ -50,7 +51,13 @@ export default function Footer() {
           {/* Column 1: Brand and Description */}
           <div>
             <a href="#home" className="text-2xl font-bold text-gray-900 mb-4 inline-block">
-              NamoosX
+              <Image
+                              src="/images/LogoDark.png"
+                              alt="NamoosX logo"
+                              width={220}
+                              height={50}
+                              priority
+                            />
             </a>
             <p className="text-gray-500 text-sm">
               Engineering intelligent solutions to accelerate your business growth and efficiency.

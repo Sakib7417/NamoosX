@@ -1,29 +1,20 @@
-/*
- * Custom styles for the Testimonials carousel animation.
- */
-
-/* The animation keyframes that move the content from right to left */
+/* Smooth infinite marquee animation */
 @keyframes marquee {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    /* We move it by 50% of the total width.
-       Since we duplicated the content, the total width is 200%.
-       Moving it by 50% (which is 100% of the original content width)
-       brings the second (duplicated) set perfectly into view. */
-    transform: translateX(-50%);
+  100% {
+    transform: translateX(-50%); /* Scroll by half because content is duplicated */
   }
 }
 
-/* The class that applies the animation to the container */
 .animate-marquee {
-  /* Adjust the duration (e.g., 80s) to make the scroll slower or faster */
-  animation: marquee 9s linear infinite;
-  will-change: transform; /* Helps with performance */
+  display: flex;
+  width: max-content; /* Important: container width matches content */
+  animation: marquee 20s linear infinite;
+  will-change: transform;
 }
 
-/* Pause the animation on hover */
 .animate-marquee:hover {
   animation-play-state: paused;
 }

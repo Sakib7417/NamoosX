@@ -65,7 +65,7 @@ export default function ContactUsSection() {
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-black">Email Us</h3>
                 <p className="text-gray-600 dark:text-black-400 mt-1">Our team is here to help. Drop us a line!</p>
-                <a href="mailto:contact@codesai.com" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">contact@codesai.com</a>
+                <a href="mailto:Info@namoosx.com" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">Info@namoosx.com</a>
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export default function ContactUsSection() {
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-black">Call Us</h3>
                 <p className="text-gray-600 dark:text-black-400 mt-1">Mon-Fri from 9am to 5pm.</p>
-                <a href="tel:+1234567890" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">+1 (234) 567-890</a>
+                <a href="tel:+917017715831" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">+917017715831</a>
               </div>
             </div>
 
@@ -89,7 +89,7 @@ export default function ContactUsSection() {
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-black">WhatsApp</h3>
                 <p className="text-gray-600 dark:text-black-400 mt-1">Chat with us directly for a quick response.</p>
-                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">Start a Chat</a>
+                <a href="https://wa.me/7017715831" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">Start a Chat</a>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export default function ContactUsSection() {
               </div>
               <div className="ml-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-black">Visit Us</h3>
-                <p className="text-gray-600 dark:text-black-400 mt-1">123 Innovation Drive, Tech City, 122001</p>
+                <p className="text-gray-600 dark:text-black-400 mt-1">Plot No. 10, Block - B, Office No. T05, Fourth Floor, Sector 2 Noida 201301</p>
                 <a href="#" className="text-blue-600 dark:text-blue-400 font-semibold mt-2 inline-block">Get Directions</a>
               </div>
             </div>

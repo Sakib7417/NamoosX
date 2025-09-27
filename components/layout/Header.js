@@ -46,11 +46,12 @@ export default function Header() {
           <div className="flex-shrink-0">
             <a href="#home">
               <Image
-                src="/images/logo.png"
+                src="/images/LogoDark.png"
                 alt="NamoosX logo"
                 width={220}
                 height={50}
                 priority
+                className="w-32 sm:w-40 md:w-52 lg:w-56 h-auto"
               />
             </a>
           </div>
@@ -78,14 +79,14 @@ export default function Header() {
             <div className="relative">
               <button
                 onClick={() => setIsContactOpen(!isContactOpen)}
-                className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300"
+                className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#922ffc] to-[#347dff] rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-300"
               >
                 Connect
               </button>
               {isContactOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-xl overflow-hidden animate-fade-in-down">
                   <a
-                    href="https://wa.me/your-number"
+                    href="https://wa.me/7017715831"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
@@ -94,14 +95,14 @@ export default function Header() {
                     WhatsApp
                   </a>
                   <a
-                    href="mailto:your-email@example.com"
+                    href="mailto:Info@namoosx.com"
                     className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     <Mail className="w-5 h-5 mr-3 text-red-500" />
                     Mail
                   </a>
                   <a
-                    href="tel:your-number"
+                    href="tel:+917017715831"
                     className="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     <Phone className="w-5 h-5 mr-3 text-blue-500" />
