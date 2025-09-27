@@ -8,7 +8,7 @@ export default function TrustedClientsSection() {
     { logo: '/images/Dafnax.png' },
     { logo: '/images/Aviva.png' },
     { logo: '/images/Amway.png' },
-    { logo: '/images/makemytrip.png' },
+    // { logo: '/images/makemytrip.png' },
     { logo: '/images/jio.png' },
     { logo: '/images/adani.png' },
     { logo: '/images/zycus.png' },
